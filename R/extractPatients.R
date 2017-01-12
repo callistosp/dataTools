@@ -1,17 +1,12 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Extract Patients
+#'
+#' This function extracts a subset of patient data from a larger dataset
+#' @param ds parent data.frame to extract data from
+#' @param px list of patient identifiers to extract from the dataset
+#' @keywords
+#' @export
+#' @examples
+#' extractPatients()
 
 ## use of a function to filter and merge entire RedCap
 ## datasets to include only the PPEP patients

@@ -1,17 +1,12 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Merge by Date
+#'
+#' This function converts patient data in wide form to long form
+#' @param ds parent data.frame to be added to
+#' @param ds2add data to pull from
+#' @keywords
+#' @export
+#' @examples
+#' mergeByDate()
 
 mergeByDate <- function(ds, ds2add){
   ## Assumption: ds2add has 3 columns (SID, DATE, VAR)

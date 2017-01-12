@@ -1,17 +1,12 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Convert Wide To Long
+#'
+#' This function converts patient data in wide form to long form
+#' @param data this is the data.frame to be transformed
+#' @param length the number of repeated blocks
+#' @keywords
+#' @export
+#' @examples
+#' convertWideToLong()
 
 ## takes data.frame "data", preserves the first column as a label column,
 ## and condenses the data to longform with ("length" + 1) columns per row
