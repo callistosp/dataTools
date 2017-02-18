@@ -18,6 +18,7 @@
 extractPatients <- function(ds, px){
   names(ds)[1] <- c("SID")
   ds$SID <- toupper(ds$SID)
+  px$SID <- toupper(px$SID)
   finalds <- merge(px, ds, by="SID")
   return(finalds)
 }

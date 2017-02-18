@@ -17,6 +17,7 @@ mergeByDate <- function(ds, ds2add){
   ## Assumption: ds2add has 3 columns (SID, DATE, VAR)
   ## mergeByDate function adds new column to ds that contains
   ## VAR from nearest past DATE for SID to each row
+  ## and returns ds
   tmpnames <- names(ds)
   ds$VAR <- NA
   for(i in 1:nrow(ds)){
