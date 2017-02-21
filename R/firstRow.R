@@ -12,7 +12,6 @@
 firstRow <- function(ds){
   pxList <- unique(ds[,1])
   dsnew <- list()
-  names(dsnew) <- names(ds)
   for(i in 1:length(pxList)){
     ## extract all rows with Ith patient
     tmp <- ds[which(ds[,1] == pxList[i]),]
