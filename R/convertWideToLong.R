@@ -29,12 +29,3 @@ convertWideToLong <- function(data, length){
   keep <- apply(output[,2:ncol(output)],1,function(x)any(!(is.na(x) | x=="")))
   return(output[keep,])
 }
-
-## use of a function to filter and merge entire RedCap
-## datasets to include only the PPEP patients
-extractPatients <- function(ds, px){
-  names(ds)[1] <- c("SID")
-  ds$SID <- toupper(ds$SID)
-  finalds <- merge(px, ds, by="SID")
-  return(finalds)
-}
