@@ -12,5 +12,5 @@ filterC <- function(ds){
   ## filter columns with IGNORE=C
   dsFilt <- ds[which(ds[,1] != "C"),]
   ## return data.frame without comment column
-  return(dsFilt[,2:nrow(dsFilt)])
+  return(dsFilt[,2:ncol(dsFilt)])
 }
