@@ -11,7 +11,7 @@
 ## use of a function to filter and merge entire RedCap
 ## datasets to include only the PPEP patients
 extractPatients <- function(ds, px){
-  if(is.character(px)){
+  if(!is.data.frame(px)){
     px <- as.data.frame(px)
     names(px) <- c("SID")
   }
