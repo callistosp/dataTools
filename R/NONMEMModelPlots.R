@@ -5,7 +5,7 @@
 
 ## ONLY CHANGE THESE TWO VARIABLES ##
 path = 'C:/Users/Sam/NONMEM_Runs/TPM-PK-Transit/'
-model = "008"
+model = "0065"
 ######################################
 
 library(ggplot2)
