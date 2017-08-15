@@ -10,14 +10,18 @@
 
 ## use of a function to filter and merge entire RedCap
 ## datasets to include only the PPEP patients
+require(stringr)
 extractPatients <- function(ds, px){
   if(!is.data.frame(px)){
     px <- as.data.frame(px)
     names(px) <- c("SID")
   }
   names(ds)[1] <- c("SID")
-  ds$SID <- toupper(ds$SID)
-  px$SID <- toupper(px$SID)
+  ## change to upper if letters in SID
+  if(all(str_detect(c(ds$SID, px$SID), "[[:alpha:]]"))){
+    ds$SID <- toupper(ds$SID)
+    px$SID <- toupper(px$SID)
+  }
   finalds <- merge(px, ds, by="SID")
   return(finalds)
 }
