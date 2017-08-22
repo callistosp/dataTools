@@ -8,9 +8,9 @@
 #' @examples
 #' headr()
 
-headr <- function(file){
-  headers <- read.csv(file = file, header = F, nrows = 1, as.is = T)
-  dataset <- read.csv(file=file, skip = 2, header = F, as.is=T)
+headr <- function(file, header.row=1, data.start=2){
+  headers <- read.csv(file = file, skip=header.row-1, header = F, nrows = 1, as.is = T)
+  dataset <- read.csv(file=file, skip = data.start, header = F, as.is=T)
   names(dataset) <- headers
   return(dataset)
 }
