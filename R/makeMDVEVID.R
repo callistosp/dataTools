@@ -1,0 +1,33 @@
+#' makeMDVEVID()
+#'
+#' This function adds MDV and EVID columns to NONMEM
+#' formatted data.frames
+#' @param ds NONMEM formatted data.frame to add MDV/EVID column to
+#' @param DV column number containing DV record
+#' @param AMT column number containing AMT record
+#' @keywords
+#' @export
+#' @examples
+#' makeMDVEVID()
+
+makeMDVEVID <- function(ds, DV, AMT){
+  ## assume all rows obs event
+  ds$MDV <- 0
+  ds$EVID <- 0
+
+  ## loop through all rows
+  for(i in 1:nrow(ds)){
+    ## check dosing event
+    if(ds[i,AMT] != "."){
+      ds$MDV[i] <- 1
+      ds$EVID[i] <- 1
+    }
+    ## check missing DV
+    if(ds[i,AMT] == "." && ds[i,DV] == "."){
+      ds$MDV[i] <- 1
+      ds$EVID[i] <- 2
+    }
+  }
+
+  return(ds)
+}
