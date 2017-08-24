@@ -18,12 +18,12 @@ makeMDVEVID <- function(ds, DV, AMT){
   ## loop through all rows
   for(i in 1:nrow(ds)){
     ## check dosing event
-    if(ds[i,AMT] != "."){
+    if(!(ds[i,AMT] == "." || is.na(ds[i,AMT]))){
       ds$MDV[i] <- 1
       ds$EVID[i] <- 1
     }
     ## check missing DV
-    if(ds[i,AMT] == "." && ds[i,DV] == "."){
+    if((ds[i,AMT] == "." || is.na(ds[i,AMT])) && (ds[i,DV] == "." || is.na(ds[i, DV]))){
       ds$MDV[i] <- 1
       ds$EVID[i] <- 2
     }
