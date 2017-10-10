@@ -38,3 +38,6 @@ mergeByDate <- function(ds, ds2add){
   names(ds) <- append(tmpnames, names(ds2add[3]))
   return(ds)
 }
+
+## test
+
