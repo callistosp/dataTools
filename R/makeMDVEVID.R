@@ -11,7 +11,7 @@
 #' makeMDVEVID()
 
 makeMDVEVID <- function(ds, DV, AMT){
-  ## assume all rows obs event
+  ## initially assume all rows obs event
   ds$MDV <- 0
   ds$EVID <- 0
 
