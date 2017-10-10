@@ -3,7 +3,7 @@
 #' This function extracts a subset of patient data from a larger dataset
 #' @param ds parent data.frame to extract data from
 #' @param px list of patient identifiers to extract from the dataset
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' extractPatients()

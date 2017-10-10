@@ -3,7 +3,7 @@
 #' This function converts clock times stored as strings
 #' into numeric hours
 #' @param vec vector containing time values of format HH:MM stored as strings
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' numericTime()

@@ -3,7 +3,7 @@
 #' This function filters out commented rows from a NONMEM-style
 #' dataset, and removes the comment column for plotting.
 #' @param ds longform dataset with IGNORE=C in first column
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' filterC()

@@ -5,7 +5,7 @@
 #' in the first column of the dataset.
 #' @param ds longform dataset with patient ID in first column
 #' @param C indicates inclusion of C column; if true, ignores first column
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' firstRow()

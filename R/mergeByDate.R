@@ -3,7 +3,7 @@
 #' This function converts patient data in wide form to long form
 #' @param ds parent data.frame to be added to and return
 #' @param ds2add data to pull from
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' mergeByDate()

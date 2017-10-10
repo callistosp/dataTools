@@ -3,7 +3,7 @@
 #' This function reads in a dataset with a header and a unit row
 #' ignoring the unit row in preserving data types
 #' @param file location of .csv containing dataset with header followed by single unit row
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' headr()

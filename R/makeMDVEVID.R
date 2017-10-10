@@ -5,7 +5,7 @@
 #' @param ds NONMEM formatted data.frame to add MDV/EVID column to
 #' @param DV column number containing DV record
 #' @param AMT column number containing AMT record
-#' @keywords
+#' @keywords dataTools
 #' @export
 #' @examples
 #' makeMDVEVID()
