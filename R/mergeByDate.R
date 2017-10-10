@@ -39,5 +39,3 @@ mergeByDate <- function(ds, ds2add){
   return(ds)
 }
 
-## test
-
