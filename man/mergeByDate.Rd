@@ -9,10 +9,12 @@ mergeByDate(ds, ds2add)
 \arguments{
 \item{ds}{parent data.frame to be added to and return}
 
-\item{ds2add}{data to pull from}
+\item{ds2add}{data to pull covariates from (assumes 3 columns: SID, DATE, VAR)}
 }
 \description{
-This function converts patient data in wide form to long form
+mergeByDate function adds new column to ds that contains
+ VAR from nearest past DATE for SID to each row
+ and returns ds
 }
 \examples{
 mergeByDate()
