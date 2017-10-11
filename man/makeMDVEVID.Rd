@@ -17,7 +17,8 @@ makeMDVEVID(ds, DV, AMT)
 This function adds MDV and EVID columns to NONMEM
 formatted data.frames
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 makeMDVEVID()
 }
 \keyword{dataTools}

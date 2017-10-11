@@ -8,6 +8,7 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
 #' firstRow()
 
 firstRow <- function(ds, C=FALSE){

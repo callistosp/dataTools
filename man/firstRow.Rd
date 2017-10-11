@@ -16,7 +16,8 @@ This function extracts the first row for each patient from
 a longform dataset, assuming patient identifiers are located
 in the first column of the dataset.
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 firstRow()
 }
 \keyword{dataTools}

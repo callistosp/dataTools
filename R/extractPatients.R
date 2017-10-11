@@ -6,11 +6,12 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
+#' @import stringr
 #' extractPatients()
 
 ## use of a function to filter and merge
 ## datasets to include only listed patients
-require(stringr)
 extractPatients <- function(ds, px){
   if(!is.data.frame(px)){
     px <- as.data.frame(px)

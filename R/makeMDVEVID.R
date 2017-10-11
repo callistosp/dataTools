@@ -8,6 +8,7 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
 #' makeMDVEVID()
 
 makeMDVEVID <- function(ds, DV, AMT){

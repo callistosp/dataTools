@@ -14,7 +14,8 @@ convertWideToLong(data, length)
 \description{
 This function converts patient data in wide form to long form
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 convertWideToLong()
 }
 \keyword{dataTools}

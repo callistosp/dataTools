@@ -16,7 +16,8 @@ mergeByDate function adds new column to ds that contains
  VAR from nearest past DATE for SID to each row
  and returns ds
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 mergeByDate()
 }
 \keyword{dataTools}

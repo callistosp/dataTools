@@ -6,6 +6,7 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
 #' numericTime()
 
 numericTime <- function(vec){

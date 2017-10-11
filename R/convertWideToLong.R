@@ -6,6 +6,7 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
 #' convertWideToLong()
 
 ## takes data.frame "data", preserves the first column as a label column,

@@ -13,7 +13,8 @@ filterC(ds)
 This function filters out commented rows from a NONMEM-style
 dataset, and removes the comment column for plotting.
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 filterC()
 }
 \keyword{dataTools}

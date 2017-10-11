@@ -13,7 +13,8 @@ numericTime(vec)
 This function converts clock times stored as strings
 into numeric hours
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 numericTime()
 }
 \keyword{dataTools}

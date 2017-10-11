@@ -6,6 +6,7 @@
 #' @keywords dataTools
 #' @export
 #' @examples
+#' @author Samuel Callisto \email{calli055@umn.edu}
 #' headr()
 
 headr <- function(file, header.row=1, data.start=3){

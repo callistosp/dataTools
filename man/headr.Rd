@@ -13,7 +13,8 @@ headr(file, header.row = 1, data.start = 3)
 This function reads in a dataset with a header and a unit row
 ignoring the unit row in preserving data types
 }
-\examples{
+\author{
+Samuel Callisto \email{calli055@umn.edu}
 headr()
 }
 \keyword{dataTools}
