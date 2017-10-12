@@ -1,10 +1,12 @@
 Package: dataTools
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools for Compiling Patient Data for Pharmacometric Models
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Samuel P Callisto
+URL: https://github.com/callistosp/dataTools
+Maintainer: Samuel P Callisto <calli055@umn.edu>
+Imports: stringr
+Description: Suite of functions designed to ease merging disparate datasets into NONMEM-style datasets for downstream use in pharmacometric modeling.
+License: MIT License
 LazyData: TRUE
 RoxygenNote: 6.0.1
