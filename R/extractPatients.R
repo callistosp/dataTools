@@ -19,7 +19,7 @@ extractPatients <- function(ds, px){
   }
   names(ds)[1] <- c("SID")
   ## change to upper if letters in SID
-  if(all(str_detect(c(ds$SID, px$SID), "[[:alpha:]]"))){
+  if(all(stringr::str_detect(c(ds$SID, px$SID), "[[:alpha:]]"))){
     ds$SID <- toupper(ds$SID)
     px$SID <- toupper(px$SID)
   }
