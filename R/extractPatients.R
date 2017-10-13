@@ -1,6 +1,6 @@
 #' Extract Patients
 #'
-#' This function extracts a subset of patient data from a larger dataset
+#' This function extracts a subset of patient data from a larger dataset. Assumes ds first column contains IDs to be filtered; this column will be renamed SID as a result of this function.
 #' @param ds parent data.frame to extract data from
 #' @param px vector of patient identifiers to extract from the dataset
 #' @keywords dataTools
