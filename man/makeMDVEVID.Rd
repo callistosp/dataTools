@@ -4,14 +4,16 @@
 \alias{makeMDVEVID}
 \title{makeMDVEVID()}
 \usage{
-makeMDVEVID(ds, DV, AMT)
+makeMDVEVID(ds, DV, AMT, clearSystem = F)
 }
 \arguments{
-\item{ds}{NONMEM formatted data.frame to add MDV/EVID column to}
+\item{ds}{NONMEM formatted data.frame to add MDV/EVID column to. Assumes contains SID column.}
 
 \item{DV}{column number containing DV record}
 
 \item{AMT}{column number containing AMT record}
+
+\item{clearSystem}{boolean variable; if TRUE will clear system (EVID=4) for multiple dosing events}
 }
 \description{
 This function adds MDV and EVID columns to NONMEM
