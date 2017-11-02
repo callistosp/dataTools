@@ -2,7 +2,7 @@
 #'
 #' This function converts patient data in wide form to long form
 #' @param data this is the data.frame to be transformed
-#' @param length the number of repeated blocks
+#' @param length the number of columns in each repeated blocks
 #' @keywords dataTools
 #' @export
 #' @examples
