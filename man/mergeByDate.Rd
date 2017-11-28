@@ -7,17 +7,28 @@
 mergeByDate(ds, ds2add)
 }
 \arguments{
-\item{ds}{parent data.frame to be added to and return}
+\item{ds}{Data.frame to be added to and returned.}
 
-\item{ds2add}{data to pull covariates from (assumes 3 columns: SID, DATE, VAR)}
+\item{ds2add}{Data to pull covariates from and merge into \code{ds}. The
+function assumes this data.frame has 2 columns named \code{SID} and
+\code{DATE} for merging, with a third column with the variable to be
+included.}
+}
+\value{
+Data.frame \code{ds} with an added column from \code{ds2add}.
 }
 \description{
-mergeByDate function adds new column to ds that contains
- VAR from nearest past DATE for SID to each row
- and returns ds
+mergeByDate function adds new column to ds that contains VAR from nearest
+past DATE for SID to each row and returns ds.
+}
+\details{
+Long description.
+}
+\examples{
+
+
+
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-mergeByDate()
+Samuel Callisto \email{calli055@umn.edu} mergeByDate()
 }
-\keyword{dataTools}

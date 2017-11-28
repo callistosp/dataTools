@@ -2,19 +2,31 @@
 % Please edit documentation in R/numericTime.R
 \name{numericTime}
 \alias{numericTime}
-\title{numericTime()}
+\title{Convert Clock Time to Numeric Time}
 \usage{
 numericTime(vec)
 }
 \arguments{
-\item{vec}{vector containing time values of format HH:MM stored as strings}
+\item{vec}{Vector containing time values of format "HH:MM" stored as
+\code{character}.}
+}
+\value{
+Vector containing time values converted to fractional hour +
+  minute/60 as \code{numeric}.
 }
 \description{
-This function converts clock times stored as strings
-into numeric hours
+Clock times stored as character are converted into numeric hours for ease of
+calculating time differences.
+}
+\details{
+This function was created to convert clock times to numeric times with
+minutes converted to fractions of hours.
+}
+\examples{
+clockTimes <- c("10:06", "8:30", "12:15")
+numericTime(clockTimes)
+
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-numericTime()
+Samuel Callisto \email{calli055@umn.edu} numericTime()
 }
-\keyword{dataTools}

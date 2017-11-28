@@ -7,14 +7,31 @@
 extractPatients(ds, px)
 }
 \arguments{
-\item{ds}{parent data.frame to extract data from}
+\item{ds}{Parent data.frame to extract patient subset from.}
 
-\item{px}{vector of patient identifiers to extract from the dataset}
+\item{px}{Vector of patient identifiers to extract from the dataset.}
+}
+\value{
+A subset of the data.frame ds will be returned with only the patients
+  listed in the px vector. The first column will be renamed "SID" as a result
+  of this function.
 }
 \description{
-This function extracts a subset of patient data from a larger dataset. Assumes ds first column contains IDs to be filtered; this column will be renamed SID as a result of this function.
+Data.frames are subsetted using a vector of patients.
+}
+\details{
+This function extracts a subset of patient data from a larger dataset. It
+assumes the first column of the data.frame \code{ds} contains alphanumeric
+subject identifications (\code{SID}) to be filtered; this column will be
+renamed "SID" as a result of this function if it is not already.
+}
+\examples{
+dataset <- data.frame(c(1:20), LETTERS[1:20], letters[1:20])
+names(dataset) <- c("SID", "cov1", "cov2")
+output <- extractPatients(dataset, 4:8)
+output
+
 }
 \author{
 Samuel Callisto \email{calli055@umn.edu}
 }
-\keyword{dataTools}

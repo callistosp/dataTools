@@ -1,15 +1,21 @@
 #' Merge by Date
 #'
-#'  mergeByDate function adds new column to ds that contains
-#'  VAR from nearest past DATE for SID to each row
-#'  and returns ds
-#' @param ds parent data.frame to be added to and return
-#' @param ds2add data to pull covariates from (assumes 3 columns: SID, DATE, VAR)
-#' @keywords dataTools
-#' @export
+#' mergeByDate function adds new column to ds that contains VAR from nearest
+#' past DATE for SID to each row and returns ds.
+#'
+#' Long description.
+#'
+#' @param ds Data.frame to be added to and returned.
+#' @param ds2add Data to pull covariates from and merge into \code{ds}. The
+#'   function assumes this data.frame has 2 columns named \code{SID} and
+#'   \code{DATE} for merging, with a third column with the variable to be
+#'   included.
+#' @return Data.frame \code{ds} with an added column from \code{ds2add}.
 #' @examples
-#' @author Samuel Callisto \email{calli055@umn.edu}
-#' mergeByDate()
+#'
+#'
+#'
+#' @author Samuel Callisto \email{calli055@@umn.edu} mergeByDate()
 
 mergeByDate <- function(ds, ds2add){
   ## Assumption: ds2add has 3 columns (SID, DATE, VAR)

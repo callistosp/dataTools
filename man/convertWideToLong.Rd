@@ -2,20 +2,29 @@
 % Please edit documentation in R/convertWideToLong.R
 \name{convertWideToLong}
 \alias{convertWideToLong}
-\title{Convert Wide To Long}
+\title{Convert Wide Data To Long}
 \usage{
 convertWideToLong(data, length)
 }
 \arguments{
-\item{data}{this is the data.frame to be transformed}
+\item{data}{Data.frame to be transformed from wide to long.}
 
-\item{length}{the number of repeated blocks}
+\item{length}{The number of columns in each repeated block.}
+}
+\value{
+Data.frame in long form.
 }
 \description{
-This function converts patient data in wide form to long form
+This function converts patient data in wide form to long form.
+}
+\details{
+Long description.
+}
+\examples{
+
+
+
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-convertWideToLong()
+Samuel Callisto \email{calli055@umn.edu} convertWideToLong()
 }
-\keyword{dataTools}

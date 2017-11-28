@@ -2,19 +2,34 @@
 % Please edit documentation in R/headr.R
 \name{headr}
 \alias{headr}
-\title{headr()}
+\title{Strip Unit Rows While Importing}
 \usage{
 headr(file, header.row = 1, data.start = 3)
 }
 \arguments{
-\item{file}{location of .csv containing dataset with header followed by single unit row}
+\item{file}{Indicates file location of .csv containing dataset.}
+
+\item{header.row}{Indicates the row number that the headers are located in.
+Defaults to 1.}
+
+\item{data.start}{Indicates the row number that the data begins (i.e. the
+first non-unit row). Defaults to 3.}
+}
+\value{
+file will be imported as a data.frame with the unit rows removed.
 }
 \description{
-This function reads in a dataset with a header and a unit row
-ignoring the unit row in preserving data types
+This function reads in a dataset with a header and a unit row ignoring the
+unit row to preserve data types.
+}
+\details{
+This helper function extends the functionality of \code{\link{read.csv}} by
+importing headers separately and skipping unit rows located in the specified
+column. If using \code{\link{read.csv}} for this, the datatype in each column
+defaults to \code{character}. This function allows the datatype to be
+inferred during import, which saves time for users who wish to perform
+calculations on the data once imported without manually typecasting.
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-headr()
+Samuel Callisto \email{calli055@umn.edu} headr()
 }
-\keyword{dataTools}

@@ -1,16 +1,19 @@
-#' makeMDVEVID()
+#' Auto-populate MDV and EVID Columns.
 #'
-#' This function adds MDV and EVID columns to NONMEM
-#' formatted data.frames
-#' @param ds NONMEM formatted data.frame to add MDV/EVID column to. Assumes contains SID column.
-#' @param DV column number containing DV record
-#' @param AMT column number containing AMT record
-#' @param clearSystem boolean variable; if TRUE will clear system (EVID=4) for multiple dosing events
-#' @keywords dataTools
-#' @export
+#' This function adds MDV and EVID columns to NONMEM formatted data.frames.
+#'
+#' Long description.
+#'
+#' @param ds NONMEM formatted data.frame to add MDV/EVID column to. Assumes
+#'   contains column with patient identifiers named "SID".
+#' @param DV Column number containing DV record.
+#' @param AMT Column number containing AMT record.
+#' @param clearSystem Boolean variable; if \code{TRUE} will clear system
+#'   (EVID=4) for multiple dosing events in a single patient.
+#' @return Data.frame \code{ds} with two columns (MDV and EVID) appended to the end.
 #' @examples
-#' @author Samuel Callisto \email{calli055@umn.edu}
-#' makeMDVEVID()
+#'
+#' @author Samuel Callisto \email{calli055@@umn.edu} makeMDVEVID()
 
 makeMDVEVID <- function(ds, DV, AMT, clearSystem=F){
   ## initially assume all rows obs event

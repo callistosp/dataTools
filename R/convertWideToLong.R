@@ -1,13 +1,17 @@
-#' Convert Wide To Long
+#' Convert Wide Data To Long
 #'
-#' This function converts patient data in wide form to long form
-#' @param data this is the data.frame to be transformed
-#' @param length the number of columns in each repeated blocks
-#' @keywords dataTools
-#' @export
+#' This function converts patient data in wide form to long form.
+#'
+#' Long description.
+#'
+#' @param data Data.frame to be transformed from wide to long.
+#' @param length The number of columns in each repeated block.
+#' @return Data.frame in long form.
 #' @examples
-#' @author Samuel Callisto \email{calli055@umn.edu}
-#' convertWideToLong()
+#'
+#'
+#'
+#' @author Samuel Callisto \email{calli055@@umn.edu} convertWideToLong()
 
 ## takes data.frame "data", preserves the first column as a label column,
 ## and condenses the data to longform with ("length" + 1) columns per row
