@@ -26,8 +26,8 @@ makeMDVEVID <- function(ds, DV, AMT, clearSystem=F){
   ## loop through all rows
   for(i in 1:nrow(ds)){
     ## check if new patient
-    if(ds$SID != currentPatient){
-      currentPatient <- ds$SID
+    if(ds$SID[i] != currentPatient){
+      currentPatient <- ds$SID[i]
       prevDose <- F
     }
 
