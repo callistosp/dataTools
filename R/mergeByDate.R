@@ -15,13 +15,23 @@
 #'
 #'
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} mergeByDate()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' @import lubridate  mergeByDate()
 
 mergeByDate <- function(ds, ds2add){
-  ## Assumption: ds2add has 3 columns (SID, DATE, VAR)
+  ## Assumption: ds2add has 3 named columns (SID, DATE, VAR)
   ## mergeByDate function adds new column to ds that contains
   ## VAR from nearest past DATE for SID to each row
   ## and returns ds
+
+  ## check that DATE columns are Date datatype
+  if(!(lubridate::is.Date(ds$DATE) && lubridate::is.Date(ds2add$DATE))){
+    warning("Setting date using default format")
+    ds$DATE <- as.Date(ds$DATE)
+    ds2add$DATE <- as.Date(ds2add$DATE)
+  }
+
+  ## store column names for later
   tmpnames <- names(ds)
   ds$VAR <- NA
   for(i in 1:nrow(ds)){
