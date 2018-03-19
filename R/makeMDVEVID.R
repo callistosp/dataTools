@@ -10,14 +10,21 @@
 #' @param AMT Column number containing AMT record.
 #' @param clearSystem Boolean variable; if \code{TRUE} will clear system
 #'   (EVID=4) for multiple dosing events in a single patient.
+#' @param C Indicates that the first column contains comments rather than IDs. Second
+#'   column used for IDs instead
 #' @return Data.frame \code{ds} with two columns (MDV and EVID) appended to the end.
 #' @examples
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} makeMDVEVID()
 
-makeMDVEVID <- function(ds, DV, AMT, clearSystem=F){
-  tmpName <- names(ds)[1]
-  names(ds)[1] <- c("SID")
+makeMDVEVID <- function(ds, DV, AMT, clearSystem=F, C = F){
+  if(C){
+    tmpName <- names(ds)[2]
+    names(ds)[2] <- c("SID")
+  }else{
+    tmpName <- names(ds)[1]
+    names(ds)[1] <- c("SID")
+  }
 
   ## initially assume all rows obs event
   ds$MDV <- 0
