@@ -55,6 +55,11 @@ makeMDVEVID <- function(ds, DV, AMT, clearSystem=F, C = F){
     }
   }
 
-  names(ds)[1] <- tmpName
+  if(C){
+    names(ds)[2] <- tmpName
+  }else{
+    names(ds)[1] <- tmpName
+  }
+
   return(ds)
 }
