@@ -35,6 +35,5 @@ output
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-filterC()
+Samuel Callisto \email{calli055@umn.edu} filterC()
 }

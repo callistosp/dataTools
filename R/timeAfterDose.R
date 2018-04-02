@@ -14,7 +14,7 @@
 #'
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} timeAfterDose()
-#' @import lubridate
+#' @importFrom lubridate is.Date
 
 timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## create local copy to work with
@@ -24,11 +24,11 @@ timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## check if column in clock time or decimal time and convert if necessary
   if(length(grep(":",ds$TIME)) > 0){
     ## change clock time to decimal time
-    ds$TIME <- dataTools::numericTime(ds$TIME)
+    ds$TIME <- numericTime(ds$TIME)
   }
 
   ## check if DATA column is in correct format
-  if(!(lubridate::is.Date(ds$DATE))){
+  if(!(is.Date(ds$DATE))){
     warning("Setting date using default format")
     ds$DATE <- as.Date(ds$DATE)
   }

@@ -26,6 +26,5 @@ Long description.
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-convertWideToLong()
+Samuel Callisto \email{calli055@umn.edu} convertWideToLong()
 }

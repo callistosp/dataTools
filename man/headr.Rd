@@ -31,6 +31,5 @@ inferred during import, which saves time for users who wish to perform
 calculations on the data once imported without manually typecasting.
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-headr()
+Samuel Callisto \email{calli055@umn.edu} headr()
 }

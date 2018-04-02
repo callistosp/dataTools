@@ -33,6 +33,5 @@ Long description.
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
-makeMDVEVID()
+Samuel Callisto \email{calli055@umn.edu} makeMDVEVID()
 }

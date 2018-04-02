@@ -19,7 +19,7 @@
 #' output
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} extractPatients()
-#' @import stringr
+#' @importFrom stringr str_detect
 
 ## use of a function to filter and merge
 ## datasets to include only listed patients
@@ -30,7 +30,7 @@ extractPatients <- function(ds, px){
   }
   names(ds)[1] <- c("SID")
   ## change to upper if letters in SID
-  if(all(stringr::str_detect(c(ds$SID, px$SID), "[[:alpha:]]"))){
+  if(all(str_detect(c(ds$SID, px$SID), "[[:alpha:]]"))){
     ds$SID <- toupper(ds$SID)
     px$SID <- toupper(px$SID)
   }
