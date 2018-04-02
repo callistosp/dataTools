@@ -15,6 +15,7 @@
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} timeAfterDose()
 #' @importFrom lubridate is.Date
+#' @export
 
 timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## create local copy to work with

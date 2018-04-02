@@ -20,6 +20,7 @@
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} extractPatients()
 #' @importFrom stringr str_detect
+#' @export
 
 ## use of a function to filter and merge
 ## datasets to include only listed patients

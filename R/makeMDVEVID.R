@@ -16,6 +16,7 @@
 #' @examples
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} makeMDVEVID()
+#' @export
 
 makeMDVEVID <- function(ds, DV, AMT, clearSystem=F, C = F){
   if(C){

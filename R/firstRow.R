@@ -24,6 +24,7 @@
 #' output
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} firstRow()
+#' @export
 
 firstRow <- function(ds, C=FALSE){
   if(C){

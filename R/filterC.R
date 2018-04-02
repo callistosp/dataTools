@@ -21,6 +21,7 @@
 #' output
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} filterC()
+#' @export
 
 filterC <- function(ds, ignore = "C"){
   ## filter columns with IGNORE=C
