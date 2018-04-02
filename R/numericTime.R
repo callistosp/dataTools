@@ -14,7 +14,8 @@
 #' clockTimes <- c("10:06", "8:30", "12:15")
 #' numericTime(clockTimes)
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} numericTime()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' numericTime()
 
 numericTime <- function(vec){
   sapply(strsplit(vec,":"),

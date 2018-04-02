@@ -14,7 +14,8 @@
 #'
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu}
-#' @import lubridate timeAfterDose()
+#' @import lubridate
+#' timeAfterDose()
 
 timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## create local copy to work with

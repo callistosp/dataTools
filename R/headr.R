@@ -18,7 +18,8 @@
 #'   first non-unit row). Defaults to 3.
 #' @return file will be imported as a data.frame with the unit rows removed.
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} headr()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' headr()
 
 headr <- function(file, header.row=1, data.start=3){
   headers <- read.csv(file = file, skip=header.row-1, header = F, nrows = 1, as.is = T)

@@ -38,5 +38,6 @@ output
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu} firstRow()
+Samuel Callisto \email{calli055@umn.edu}
+firstRow()
 }

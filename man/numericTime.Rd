@@ -28,5 +28,6 @@ numericTime(clockTimes)
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu} numericTime()
+Samuel Callisto \email{calli055@umn.edu}
+numericTime()
 }

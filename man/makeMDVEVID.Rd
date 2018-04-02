@@ -4,7 +4,7 @@
 \alias{makeMDVEVID}
 \title{Auto-populate MDV and EVID Columns.}
 \usage{
-makeMDVEVID(ds, DV, AMT, clearSystem = F)
+makeMDVEVID(ds, DV, AMT, clearSystem = F, C = F)
 }
 \arguments{
 \item{ds}{NONMEM formatted data.frame to add MDV/EVID column to. Assumes
@@ -16,6 +16,9 @@ contains column with patient identifiers named "SID".}
 
 \item{clearSystem}{Boolean variable; if \code{TRUE} will clear system
 (EVID=4) for multiple dosing events in a single patient.}
+
+\item{C}{Indicates that the first column contains comments rather than IDs. Second
+column used for IDs instead}
 }
 \value{
 Data.frame \code{ds} with two columns (MDV and EVID) appended to the end.
@@ -30,5 +33,6 @@ Long description.
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu} makeMDVEVID()
+Samuel Callisto \email{calli055@umn.edu}
+makeMDVEVID()
 }

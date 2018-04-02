@@ -20,7 +20,8 @@
 #' output <- filterC(dataset)
 #' output
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} filterC()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' filterC()
 
 filterC <- function(ds, ignore = "C"){
   ## filter columns with IGNORE=C

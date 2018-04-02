@@ -11,7 +11,8 @@
 #'
 #'
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} convertWideToLong()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' convertWideToLong()
 
 ## takes data.frame "data", preserves the first column as a label column,
 ## and condenses the data to longform with ("length" + 1) columns per row
