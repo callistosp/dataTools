@@ -15,8 +15,7 @@
 #' @return Data.frame \code{ds} with two columns (MDV and EVID) appended to the end.
 #' @examples
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu}
-#' makeMDVEVID()
+#' @author Samuel Callisto \email{calli055@@umn.edu} makeMDVEVID()
 
 makeMDVEVID <- function(ds, DV, AMT, clearSystem=F, C = F){
   if(C){
