@@ -18,9 +18,8 @@
 #' output <- extractPatients(dataset, 4:8)
 #' output
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' @author Samuel Callisto \email{calli055@@umn.edu} extractPatients()
 #' @import stringr
-#' extractPatients()
 
 ## use of a function to filter and merge
 ## datasets to include only listed patients

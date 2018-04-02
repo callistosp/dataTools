@@ -15,9 +15,8 @@
 #'
 #'
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' @author Samuel Callisto \email{calli055@@umn.edu} mergeByDate()
 #' @import lubridate
-#' mergeByDate()
 
 mergeByDate <- function(ds, ds2add){
   ## Assumption: ds2add has 3 named columns (SID, DATE, VAR)

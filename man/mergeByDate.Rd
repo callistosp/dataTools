@@ -30,5 +30,5 @@ Long description.
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
+Samuel Callisto \email{calli055@umn.edu} mergeByDate()
 }

@@ -4,7 +4,7 @@
 #'
 #' Long description.
 #'
-#' @param ds
+#' @param dataset data.frame containing columns listed
 #' @param ID the column number contianing ID in ds
 #' @param TIME the column number containing TIME in ds
 #' @param DATE the column number containing DATE in ds
@@ -13,9 +13,8 @@
 #'
 #'
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu}
+#' @author Samuel Callisto \email{calli055@@umn.edu} timeAfterDose()
 #' @import lubridate
-#' timeAfterDose()
 
 timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## create local copy to work with
@@ -25,7 +24,7 @@ timeAfterDose <- function(dataset, ID, TIME, DATE){
   ## check if column in clock time or decimal time and convert if necessary
   if(length(grep(":",ds$TIME)) > 0){
     ## change clock time to decimal time
-    ds$TIME <- numericTime(ds$TIME)
+    ds$TIME <- dataTools::numericTime(ds$TIME)
   }
 
   ## check if DATA column is in correct format

@@ -7,6 +7,8 @@
 timeAfterDose(dataset, ID, TIME, DATE)
 }
 \arguments{
+\item{dataset}{data.frame containing columns listed}
+
 \item{ID}{the column number contianing ID in ds}
 
 \item{TIME}{the column number containing TIME in ds}
@@ -28,5 +30,5 @@ Long description.
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu}
+Samuel Callisto \email{calli055@umn.edu} timeAfterDose()
 }
