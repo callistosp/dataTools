@@ -15,6 +15,7 @@
 #' numericTime(clockTimes)
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} numericTime()
+#' @export
 
 numericTime <- function(vec){
   sapply(strsplit(vec,":"),

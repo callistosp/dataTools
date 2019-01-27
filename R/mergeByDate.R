@@ -15,8 +15,9 @@
 #'
 #'
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu}
-#' @import lubridate  mergeByDate()
+#' @author Samuel Callisto \email{calli055@@umn.edu} mergeByDate()
+#' @importFrom lubridate is.Date
+#' @export
 
 mergeByDate <- function(ds, ds2add){
   ## Assumption: ds2add has 3 named columns (SID, DATE, VAR)
@@ -25,7 +26,7 @@ mergeByDate <- function(ds, ds2add){
   ## and returns ds
 
   ## check that DATE columns are Date datatype
-  if(!(lubridate::is.Date(ds$DATE) && lubridate::is.Date(ds2add$DATE))){
+  if(!(is.Date(ds$DATE) && is.Date(ds2add$DATE))){
     warning("Setting date using default format")
     ds$DATE <- as.Date(ds$DATE)
     ds2add$DATE <- as.Date(ds2add$DATE)

@@ -19,10 +19,12 @@
 #' @return file will be imported as a data.frame with the unit rows removed.
 #'
 #' @author Samuel Callisto \email{calli055@@umn.edu} headr()
+#' @importFrom utils read.csv
+#' @export
 
-headr <- function(file, header.row=1, data.start=3){
+headr <- function(file, header.row=1, data.start=3, ...){
   headers <- read.csv(file = file, skip=header.row-1, header = F, nrows = 1, as.is = T)
-  dataset <- read.csv(file=file, skip = data.start-1, header = F, as.is=T)
+  dataset <- read.csv(file=file, skip = data.start-1, header = F, as.is=T, ...)
   names(dataset) <- headers
   return(dataset)
 }

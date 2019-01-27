@@ -5,8 +5,8 @@ Version: 0.1.0
 Author: Samuel P Callisto
 URL: https://github.com/callistosp/dataTools
 Maintainer: Samuel P Callisto <calli055@umn.edu>
-Imports: stringr
+Imports: stringr, lubridate
 Description: Suite of functions designed to ease merging disparate datasets into NONMEM-style datasets for downstream use in pharmacometric modeling.
 License: MIT License
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000
