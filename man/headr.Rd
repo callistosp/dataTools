@@ -4,7 +4,7 @@
 \alias{headr}
 \title{Strip Unit Rows While Importing}
 \usage{
-headr(file, header.row = 1, data.start = 3)
+headr(file, header.row = 1, data.start = 3, ...)
 }
 \arguments{
 \item{file}{Indicates file location of .csv containing dataset.}
