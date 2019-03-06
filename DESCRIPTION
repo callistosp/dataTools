@@ -10,3 +10,5 @@ Description: Suite of functions designed to ease merging disparate datasets into
 License: MIT License
 LazyData: TRUE
 RoxygenNote: 6.1.1.9000
+Suggests: 
+    testthat

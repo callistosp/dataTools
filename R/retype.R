@@ -6,12 +6,12 @@
 #'
 #' @param df: data.frame with values to typecast
 #' @param ...: unquoted list alternating variables and datatypes to convert to
-#' @return Data.frame \code{ds} with variables listed typecast to
+#' @return Data.frame \code{df} with listed variables updated to specified data types
 #' @examples
 #' iris2 <- iris %>% select(Species, Sepal.Length) %>% retype(Species, character)
 #' str(iris2)
 #'
-#' @author Samuel Callisto \email{calli055@@umn.edu} retype()
+#' @author Samuel Callisto \email{calli055@@umn.edu}
 #' @export
 
 
@@ -28,4 +28,3 @@ retype <- function(df, ...) {
   }
   return(df)
 }
-

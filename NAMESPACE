@@ -2,6 +2,7 @@
 
 export(convertWideToLong)
 export(extractPatients)
+export(fileDate)
 export(filterC)
 export(firstRow)
 export(headr)

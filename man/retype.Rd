@@ -12,7 +12,7 @@ retype(df, ...)
 \item{...:}{unquoted list alternating variables and datatypes to convert to}
 }
 \value{
-Data.frame \code{ds} with variables listed typecast to
+Data.frame \code{df} with listed variables updated to specified data types
 }
 \description{
 retype is a typecasting function which can be used
@@ -25,5 +25,5 @@ str(iris2)
 
 }
 \author{
-Samuel Callisto \email{calli055@umn.edu} retype()
+Samuel Callisto \email{calli055@umn.edu}
 }
